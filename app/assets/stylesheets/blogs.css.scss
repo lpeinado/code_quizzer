@@ -1,0 +1,23 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-header {
+  background-image: asset-data-url("home-bg.jpg");
+}
+
+.about-header {
+  background-image: asset-data-url("about-bg.jpg");
+}
+
+.contact-header {
+  background-image: asset-data-url("contact-bg.jpg");
+}
+
+.post-header {
+  background-image: asset-data-url("post-bg.jpg");
+}
+
+.social-links a {
+  color: #404040;
+}

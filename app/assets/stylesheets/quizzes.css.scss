@@ -1,0 +1,71 @@
+// Place all the styles related to the Quizzes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.correct {
+  font-size: 2.5em;
+  color: #5bb65b;
+}
+
+.incorrect {
+  @extend .correct;
+  color: #da4e49;
+}
+
+td.user-answer {
+  vertical-align: middle;
+  .button_to {
+    margin: 0.5em 0;
+  }
+}
+
+input.btn.btn-success.correct-answer,
+input.btn.btn-danger.incorrect-answer {
+  width: 100%;
+}
+
+/************************
+TABLE PROGRAMMING CHALLENGES
+************************/
+.quiz_name {
+  text-align: center;
+}
+
+table.table.table-bordered {
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+td {
+  margin: 0;
+  padding: 3px 3px;
+}
+
+thead {
+  font-weight: bold;
+  text-align: center;
+}
+
+code {
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  color: #333333;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+

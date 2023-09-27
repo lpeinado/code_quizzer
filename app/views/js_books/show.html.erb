@@ -1,0 +1,34 @@
+<div class="challenge-wrapper col-md-10 col-md-offset-1">
+  <%= markdownify(@section.markdown) %>
+
+  <table class="table table-bordered">
+
+    <thead>
+      <td class="col-md-5">Question</td>
+      <td>Click to View Answer</td>
+    </thead>
+
+    <% @section.questions.each do |question| %>
+
+      <tr class="question-row">
+        <td class="question">
+          <%= markdownify(question["body"]) %>
+        </td>
+        <td class="answer clickable no-opacity">
+          <%= markdownify(question["answer"]) %>
+        </td>
+      </tr>
+
+    <% end %>
+
+  </table>
+
+  <% if @previous_section %>
+    <%= link_to "<-- Previous (#{@previous_section.humanized_name})", js_books_path(section_name: @previous_section.to_param) %>
+  <% end %>
+
+  <% if @next_section %>
+    <%= link_to "Next (#{@next_section.humanized_name}) -->", js_books_path(section_name: @next_section.to_param), class: "pull-right" %>
+  <% end %>
+</div>
+

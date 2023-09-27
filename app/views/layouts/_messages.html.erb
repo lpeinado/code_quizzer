@@ -1,0 +1,10 @@
+<% flash.each do |name, msg| %>
+
+  <div class="flash-message alert <%= alert_css_class(name) %>">
+    <%= msg %>
+    <a data-toggle="collapse" data-target="flash_message" data-dismiss="alert">
+      Hide this
+    </a>
+  </div>
+
+<% end %>
